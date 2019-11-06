@@ -1,0 +1,27 @@
+.tabs-list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.tab {
+  text-align: center;
+  flex-basis: 100%;
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 3px solid white;
+}
+
+.tab:hover {
+  cursor: pointer;
+}
+
+.tab.active {
+  border-bottom: 3px solid blueviolet;
+}
+
+.tab.disabled {
+  border-bottom: none;
+}
