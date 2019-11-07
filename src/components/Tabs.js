@@ -29,7 +29,13 @@ const Tab = props => {
 };
 
 const TabList = props => {
+  const { setActiveTab } = useContext(TabsContext);
+
   const children = React.Children.map(props.children, (child, index) => {
+    if (child.props.isDisabled && index === 0) {
+      setActiveTab(index++);
+    }
+
     return React.cloneElement(child, {
       index
     });

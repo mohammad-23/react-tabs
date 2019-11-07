@@ -2,7 +2,7 @@ import React from "react";
 
 const TabsContext = React.createContext({
   activeTab: null,
-  onTabChange: () => {}
+  onTabChange: () => {},
 });
 
 export default TabsContext;
