@@ -23,5 +23,6 @@
 }
 
 .tab.disabled {
-  border-bottom: none;
+  border-bottom: 3px solid #c9c8ca;
+  color: #c9c8ca;
 }
